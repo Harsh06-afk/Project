@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <h3> Sidebar</h3>
+            </div>
+            <ul class="list-unstyled components">
+                <!-- <p>Dummy Heading</p> -->
+                <li class="active dropright">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1 Home 1 Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2 Home 1 Home 1</a>
+                        </li>
+                        <li class="active dropright">
+                            <a href="#exp" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">More Options </a>
+                            <ul class="collapse list-unstyled" id="exp">
+                              <li>
+                                  <a href="#">Home 1 Home 1 Home 1</a>
+                              </li>
+                              <li>
+                                  <a href="#">Home 1 Home 1 Home 1</a>
+                              </li>
+                              <li>
+                                  <a href="#">Home 1 Home 1 Home 1</a>
+                              </li>
+                          </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li class="dropright">
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Home 1 Home 1 Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 1 Home 1 Home 1</a>
+                        </li>
+                        <li class="active dropright">
+                            <a href="#exp1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">More Option </a>
+                            <ul class="collapse list-unstyled" id="exp1">
+                              <li>
+                                  <a href="#">Home 1 Home 1 Home 1</a>
+                              </li>
+                              <li>
+                                  <a href="#">Home 1 Home 1 Home 1</a>
+                              </li>
+                              <li>
+                                  <a href="#">Home 1 Home 1 Home 1</a>
+                              </li>
+                          </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropright">
+                    <a href="#projectSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Projects</a>
+                    <ul class="collapse list-unstyled" id="projectSubmenu">
+                        <li>
+                            <a href="#">Project 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Project 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Project 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <!-- NAVBAR -->
+
+        </nav>
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">                        
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    
+                    <div class="pull-right fo">
+                      
+                      <ul class="nav pull-right">
+                        <li><a class="pd" href="#"><i class="fas fa-bell"></i></a></li>
+                          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, Harsh<b class="caret"></b></a>
+                              <ul class="dropdown-menu ppd">
+                                  <li><a href="/user/preferences"> Profile    <i class="fas fa-user-alt"></i></a></li>
+                                  <li><a href="/help/support"> Support    <i class="fas fa-envelope-open"></i></a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="/auth/logout">Logout    <i class="fas fa-sign-out-alt"></i></a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </nav>   
+        
+            <!-- MAIN CONTENT -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 px-5 ">
+                      <h1> <i class="fas fa-tachometer-alt"></i> Dashboard</h1>
+                      <hr />
+                    </div>
+                  </div>
+                  
+                <div class="row" id="parent">
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 p-4 " >
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center blue  zoom colorchange">  
+                        <div class="card-body">
+                          <i class="fas fa-user-circle fa-3x fo" aria-hidden="true"></i>
+                          <hr>
+                          
+                          <p class="card-title lead">Box 1</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+              
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center yellow zoom colorchange">
+                        <div class="card-body">
+                          <i class="fa fa-edit fa-3x fo" aria-hidden="true"></i>
+                          <hr /> 
+                          <p class="card-title lead ">Box 2</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+              
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow  text-center zoom blue colorchange">
+                        <div class="card-body">
+                          <i class="fa fa-image fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 3</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+              
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center orange zoom colorchange">
+                        <div class="card-body">
+                          <i class="fa fa-envelope fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 4</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+              
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center yellow zoom">
+                        <div class="card-body">
+                          <i class="fa fa-image fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 5</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center orange zoom">
+                        <div class="card-body">
+                          <i class="fa fa-image fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 6</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center green zoom">
+                        <div class="card-body">
+                          <i class="fa fa-cart-plus fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 7</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center blue zoom">
+                        <div class="card-body">
+                          <i class="fa fa-image fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 8</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center green zoom">
+                        <div class="card-body">
+                          <i class="fa fa-edit fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 9</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center blue zoom">
+                        <div class="card-body">
+                          <i class="fa fa-edit fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 10</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#">
+                      <div class="card p-3 shadow text-center orange zoom">
+                        <div class="card-body">
+                          <i class="fa fa-edit fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 11</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3  p-4">
+                    <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#modelHELP">
+                      <div class="card p-3 shadow text-center zoom yellow">
+                        <div class="card-body">
+                          <i class="fa fa-question fa-3x fo" aria-hidden="true"></i>
+                          <hr />
+                          <p class="card-title lead">Box 12</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+              
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    
+</body>
+</html>
